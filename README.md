@@ -15,3 +15,12 @@ How to use this part of the repo :
 [HAVE FUN 😄](https://github.com/Sbai-Salah/StateManagement_React/tree/main/native-useState)
 ---
 
+# useReducer() 
+
+How to use this part of the repo : 
+
+1- Run the code and use it
+
+2- read the readme of the useReducer part 
+
+[HAVE FUN 😄](https://github.com/Sbai-Salah/StateManagement_React/tree/main/native-useReducer)
