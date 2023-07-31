@@ -8,7 +8,10 @@ function NameList(){
 
 
   const onAddName = () => {
-    list.push(name); 
+
+    //10 and we can just comment this push here.
+    //list.push(name); 
+
     /*7
     When typing something in the input field and press ADD nothing will happen
     but if we change the state (delete the field input) 
@@ -16,9 +19,20 @@ function NameList(){
       - we will get a re-render for the list component and the entered item will be added to the list
       - the setName get called for that
       - the setName does two things : 1/ sets the name 2/ in queuses a re-render request for this component
-      --> this is the difference between scallers (numbers) and references (strings and lists)
-
+      --> this is the difference between scallers (numbers) and references (objects and arrays)
+      - we have the list (as an array passed by reference so we have the actual list used)
+      - then we use the in-place method (push) to mutate the list in place.
+      - if we refrech we still git the updated data.
     */
+
+    //8 if we try this nothing will happen because any setter compares the old and new passed data, and if 
+    //   it's the same it does nothing
+
+    // setList(list); 
+
+    //9 to solve this we pass the old data + the new added data like this :
+    setList([...list, name]);
+    setName(""); // to empty the field of the input after the re-rendering.
   };
 
   return (
