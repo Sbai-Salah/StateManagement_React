@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ---
 
-## Before hooks ! :hook
+## Before hooks ! ⚓
 
 Before the introduction of hooks (Before React 16.8), React components mainly relied on class components and lifecycle methods for managing state. However, functional components were stateless and didn't have access to features like `state`.
 
@@ -67,7 +67,12 @@ export default Counter;
 
 ```
 
-> Why we use `const` when declaring a state variable ?
-The reason we use const when declaring a state variable with useState is because we are not directly reassigning the state variable itself. Instead, we are using the setCount function (provided by useState) to update the state.
+<details>
+  <summary>Why we use `const` when declaring a state variable ?</summary>
+  
+ The reason we use const when declaring a state variable with useState is because we are not directly reassigning the state variable itself. Instead, we are using the setCount function (provided by useState) to update the state.
 
 With useState, the state variable (count in our example) is immutable, which means you cannot directly modify its value like you would with a regular variable declared using let or var. By using const, we ensure that we don't accidentally reassign the state variable directly, which could lead to unexpected behavior and bugs in our React components.
+
+</details>
+
